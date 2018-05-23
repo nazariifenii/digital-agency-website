@@ -8,7 +8,9 @@
 
 @media screen and (max-width: 768px) {
     .header {
-        height: 100%;
+        display: flex;
+        align-content: space-around;
+        height: auto;
     }
 
     .visible-lg {
@@ -65,15 +67,15 @@
         width: 45%;
     }
     .infoAboutBox {
-        height: 200px;
+        height: 170px;
     }
     .applicationForm a {
         margin: 0 auto;
-        margin-top: 5%;
+        margin-top: 3%;
     }
     .infoBox img {
         padding-top: 20px;
-        width: 40%;
+        width: 30%;
     }
     .ourContacts,
     ourSocialNetworks {
@@ -83,6 +85,9 @@
         justify-content: center;
         height: 5vh;
         margin-bottom: 20%;
+    }
+    footer{
+        text-align: center;
     }
 }
 

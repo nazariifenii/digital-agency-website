@@ -18,28 +18,24 @@
     </div>-->
     <header>
         <div class="container">
-           
+
             <div class="navigation">
-                    <a href="#" class="m-menu-link">&#9776;</a>
-                <ul class="menu visible-lg">
-                    <li>
-                        <a href="#">Comp.</a>
-                    </li>
-                    <li>
-                        <a href="#">Послуги</a>
-                    </li>
-                    <li>
-                        <a href="#">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Замовити</a>
-                    </li>
-                </ul>
+                <a href="#" class="m-menu-link">&#9776;</a>
+                <div class="menu visible-lg">
+
+                    <a href="#">Comp.</a>
+
+                    <a href="#">Послуги</a>
+
+                    <a href="#">Про нас</a>
+
+                    <a href="#">Замовити</a>
+                </div>
             </div>
             <div class="info">
                 <div class="infoText">
-                    <p>Digital agency</p>
-                    <h2>Займаємося брендингом, упаковкою, створенням та просуванням сайтів, візуальної реклами</h2>
+                    <p>DIGITAL AGENCY</p>
+                    <h1>Займаємося брендингом, упаковкою, створенням та просуванням сайтів, візуальної реклами</h1>
                     <div class="buttonsMain">
                         <a href="#" class="button emptyButton">Детальніше</a>
                         <a href="#" class="button gradientButton">Консультація</a>
@@ -49,28 +45,28 @@
                     <div class="infoBox">
                         <div class="infoAboutBox">
                             <p>Створення сайтів</p>
-                            <img src="img/sitesLogo.jpg" alt="Websites">
+                            <img src="img/sitesLogo.png" alt="Websites">
                         </div>
                         <a href="#" class="button gradientButton">Дізнатися більше</a>
                     </div>
                     <div class="infoBox">
                         <div class="infoAboutBox">
                             <p>Брендинг/упаковка</p>
-                            <img src="img/brendingLogo.jpg" alt="Brending">
+                            <img src="img/brendingLogo.png" alt="Brending">
                         </div>
                         <a href="#" class="button gradientButton">Дізнатися більше</a>
                     </div>
                     <div class="infoBox">
                         <div class="infoAboutBox">
                             <p>Просування</p>
-                            <img src="img/promotionLogo.jpg" alt="Promotion">
+                            <img src="img/promotionLogo.png" alt="Promotion">
                         </div>
                         <a href="#" class="button gradientButton">Дізнатися більше</a>
                     </div>
                     <div class="infoBox">
                         <div class="infoAboutBox">
                             <p>Відео/фото/реклама</p>
-                            <img src="img/phptpVideoLogo.jpg" alt="Photo/Video">
+                            <img src="img/phptpVideoLogo.png" alt="Photo/Video">
                         </div>
                         <a href="#" class="button gradientButton">Дізнатися більше</a>
                     </div>
@@ -83,19 +79,18 @@
         <div class="container">
             <div class="title">
                 <h1>Ми знаємо що потрібно вашому бізнесу</h1>
-                <img src="img/chartLogo.jpg" alt="Chart">
             </div>
             <div class="criterionBox">
                 <div class="criterion">
                     <div class="listItem">
-                        <img src="img/listPointer.jpg" alt="->">
+                        <img src="img/listPointer.png" alt="->">
                         <h5>Відповідальність</h5>
                     </div>
                     <p>Ми вдповідально ставимося до завдання. 100% проектів було завершено</p>
                 </div>
                 <div class="criterion">
                     <div class="listItem">
-                        <img src="img/listPointer.jpg" alt="->">
+                        <img src="img/listPointer.png" alt="->">
                         <h5>Зручність співпраці</h5>
                     </div>
                     <p>Ми готові обговорити будь-які можливі способи співпраці, та гарантуємо комфорт у прийнятті рішень: фінансових
@@ -103,14 +98,14 @@
                 </div>
                 <div class="criterion">
                     <div class="listItem">
-                        <img src="img/listPointer.jpg" alt="->">
+                        <img src="img/listPointer.png" alt="->">
                         <h5>Експертність</h5>
                     </div>
                     <p>У нас немає проблеми, яку не можна вирішити. У команді достатньо експертів</p>
                 </div>
                 <div class="criterion">
                     <div class="listItem">
-                        <img src="img/listPointer.jpg" alt="->">
+                        <img src="img/listPointer.png" alt="->">
                         <h5>Відповідальність</h5>
                     </div>
                     <p>Ми працюємо на результат, та впершу чергу думаємо про біль очікування клієнта. Ваш проект — наш проект</p>
@@ -124,29 +119,29 @@
         <div class="contactUs">
             <div class="applicationForm">
                 <h1>Залиште мейл і вже через хвилину ми почнемо роботу з вашим проектом</h1>
-                <form action="#">
+                <form action="telegram.php" method="POST">
                     <div class="mailPhone">
-                        <div class="group yourMail width45">
-                            <input type="email" required>
+                        <div class="group width45">
+                            <input type="text" name="user_email" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Ваш мейл</label>
+                            <label>Ваша пошта</label>
                         </div>
                         <div class="group width45">
-                            <input type="text" required>
+                            <input type="text" name="user_phone" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Номер телефону</label>
                         </div>
                     </div>
                     <div class="group">
-                        <input type="text" class="desriptionLineWidth100" required>
+                        <input type="text" name="project_description" class="desriptionLineWidth100" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Декілька слів про ваш проект (не обв’язково)</label>
                     </div>
+                    <button type="submit" class="button gradientButton">Залишити заявку</button>
                 </form>
-                <a href="#" class="button gradientButton">Залишити заявку</a>
             </div>
             <div class="contactInformation">
                 <div class="ourContacts">
@@ -157,13 +152,13 @@
                 </div>
                 <div class="ourSocialNetworks">
                     <a href="#">
-                        <img src="img/telegramLogo.jpg" alt="Telegram">
+                        <img src="img/telegramLogo.png" alt="Telegram">
                     </a>
                     <a href="#">
-                        <img src="img/instagramLogo.jpg" alt="Instagram">
+                        <img src="img/instagramLogo.png" alt="Instagram">
                     </a>
                     <a href="#">
-                        <img src="img/facebookLogo.jpg" alt="Facebook">
+                        <img src="img/facebookLogo.png" alt="Facebook">
                     </a>
                 </div>
             </div>
