@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -119,28 +120,28 @@
         <div class="contactUs">
             <div class="applicationForm">
                 <h1>Залиште мейл і вже через хвилину ми почнемо роботу з вашим проектом</h1>
-                <form action="telegram.php" method="POST">
+                <form method="POST">
                     <div class="mailPhone">
                         <div class="group width45">
-                            <input type="text" name="user_email" required>
+                            <input id="uMailInput" type="text" name="user_email" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Ваша пошта</label>
                         </div>
                         <div class="group width45">
-                            <input type="text" name="user_phone" required>
+                            <input id="uPhoneInput" type="text" name="user_phone" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Номер телефону</label>
                         </div>
                     </div>
                     <div class="group">
-                        <input type="text" name="project_description" class="desriptionLineWidth100" required>
+                        <input id="pDescInput" type="text" name="project_description" class="desriptionLineWidth100" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Декілька слів про ваш проект (не обв’язково)</label>
                     </div>
-                    <button type="submit" class="button gradientButton">Залишити заявку</button>
+                    <button id="applicationButton" type="submit" class="button gradientButton">Залишити заявку</button>
                 </form>
             </div>
             <div class="contactInformation">
@@ -170,6 +171,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
