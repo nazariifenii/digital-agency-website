@@ -16,27 +16,27 @@ header {
     background: url(../img/headerBackground.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
-    min-height: 700px;
+    min-height: 400px;
 }
 
 section {
     height: 100vh;
-    min-height: 600px;
 }
 
 .container {
-    width: 83%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-around;
 }
-.m-menu-link{
-   display: none;
-   color: #fff;
-   font-size: 2rem;
-   text-decoration: none;
+
+.m-menu-link {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .navigation {
@@ -66,20 +66,19 @@ section {
     text-decoration: none;
 }
 
-.menu  a::before{
+.menu a::before {
     display: block;
     position: absolute;
     content: "";
     height: 2px;
-    width: 0;   
+    width: 0;
     background-color: #fff;
     transition: width .5s ease-in-out, left .5s ease-in-out;
     left: 50%;
     bottom: -3px;
+}
 
- }
-
- .menu a::after{
+.menu a::after {
     display: block;
     position: absolute;
     content: "";
@@ -89,24 +88,25 @@ section {
     transition: width .5s ease-in-out;
     left: 50%;
     bottom: -3px;
- }
+}
 
-.menu a:hover::before{
+.menu a:hover::before {
     width: 50%;
     left: 0;
- }
-.menu a:hover::after{
+}
+
+.menu a:hover::after {
     width: 50%;
- }
+}
 
 .info {
-    margin-top: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    height:  90vh;
 }
 
 .infoText {
@@ -124,7 +124,7 @@ section {
 
 .buttonsMain {
     height: 15vh;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -138,12 +138,12 @@ section {
     align-items: center;
     height: 45px;
     text-decoration: none;
-    text-align: center;
     color: #fff;
     font-weight: bold;
     font-size: 7.5pt;
     width: 175px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border: none;
 }
 
 .emptyButton {
@@ -161,7 +161,8 @@ section {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 390px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .infoBox {
@@ -184,8 +185,8 @@ section {
 
 .infoAboutBox {
     background: #fff;
-    height: 125px;    
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    height: 125px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #secondSection {
@@ -196,12 +197,13 @@ section {
     align-items: center;
 }
 
-#secondSection .container{
+#secondSection .container {
     width: 73%;
 }
 
-#secondSection a{
-    margin-top: 35px;
+#dwnldPdfButton{
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .title {
@@ -222,19 +224,18 @@ section {
 }
 
 .criterionBox {
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content: center;
-    margin: 0 7% 0 7%;
-    
+    margin: 0 7%;
 }
 
 .criterion {
-    width: 360px;
+    width: 45%;
     margin-top: 45px;
-    height: 50%;
+    height: auto;
     position: relative;
 }
 
@@ -254,26 +255,26 @@ section {
 }
 
 #thirdSection {
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.desriptionLineWidth100{
+.desriptionLineWidth100 {
     width: 100%;
 }
 
-.contactUs{
+.contactUs {
     width: 75%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
-    align-items: flex-start;  
+    justify-content: space-between;
+    align-items: flex-start;
     align-content: center;
     flex-wrap: wrap;
-    height: 70vh;
+    height: auto;
 }
 
 .applicationForm {
@@ -283,16 +284,15 @@ section {
     justify-content: flex-start;
 }
 
-.applicationForm a{
+.applicationForm a {
     margin-top: 5%;
 }
 
-
-form{
+form {
     margin-top: 5%;
 }
 
-.mailPhone{
+.mailPhone {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -418,33 +418,33 @@ input:focus~.highlight {
 .contactInformation {
     display: flex;
     flex-direction: column;
-    text-align: right;
     width: 40%;
+    text-align: right;
+    align-items: flex-end;
 }
 
-.ourSocialNetworks{
+.ourSocialNetworks {
+    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .ourSocialNetworks a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
     height: 40px;
+    width: 40px;
     border: 2px solid #b86ba3;
-    margin: 13% 0 0 5%; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
 }
 
-.ourSocialNetworks img{
+.ourSocialNetworks img {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.width45{
+.width45 {
     width: 45%;
 }
 
@@ -454,4 +454,63 @@ footer p {
     color: #999;
     font-size: 14px;
     justify-content: center;
+}
+
+.priceBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.priceBox {
+    width: 27%;
+    height: 450px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.priceBox a {
+    width: 100%;
+}
+
+.width80pers {
+    width: 80%;
+}
+
+.priceHeading h5 {
+    background: -webkit-linear-gradient(#b86ba3, #e38f73);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.priceHeading span {
+    font-size: 30px;
+}
+
+.priceHeading p {
+    font-size: 11.5px;
+}
+
+.priceBox ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.priceBox li {
+    padding-top: 4%;
+}
+
+.greyBackground {
+    background-color: #fbfbfb;
+}
+
+.textCenter{
+    text-align: center;
+    margin-top: 5%;
 }

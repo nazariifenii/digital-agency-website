@@ -1,18 +1,7 @@
-@media (max-width:1199px) {}
-
-@media (max-width:991px) {
-    .critetionBox {
-        margin: 0;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        align-content: space-around;
-        height: auto;
+    header {
+        height: 100vh;
     }
-
     .visible-lg {
         display: none;
     }
@@ -23,27 +12,39 @@
         display: flex;
     }
     .navigation {
-        height: 11vh;
+        height: 10vh;
         width: 100%;
         align-items: flex-end;
     }
+    .info {
+        margin-top: 10%;
+        height: auto;
+    }
     .infoText p {
         font-size: 15px;
-        margin-top: 20px;
     }
     .infoText h2 {
         font-size: 21px;
         margin-top: 5%;
     }
-    .infoBox {
+    .infoBox,
+    .infoBox,
+    .buttonsMain a {
         width: 45%;
     }
+    .infoBox:nth-child(3),
+    .infoBox:nth-child(4) {
+        margin-top: 4%;
+    }
     .infoText,
-    .buttonsMain,
     .infoBoxes,
     .applicationForm,
-    .contactInformation {
+    .contactInformation,
+    .criterion {
         width: 100%;
+    }
+    .buttonsMain {
+        height: 13vh;
     }
     .applicationForm {
         display: flex;
@@ -52,19 +53,8 @@
     .title h1 {
         font-size: 20px;
     }
-    .title img {
-        height: 30px;
-    }
-    .criterion,
-    .criterionBox {
-        margin-top: 10px;
-    }
-    #secondSection a {
-        margin: 20px 0 20px 0;
-    }
-    .infoBox,
-    .buttonsMain a {
-        width: 45%;
+    #applicationButton {
+        margin: 0 auto;
     }
     .infoAboutBox {
         height: 170px;
@@ -75,28 +65,45 @@
     }
     .infoBox img {
         padding-top: 20px;
-        width: 30%;
+        height: 65%;
+        margin: 0;
     }
-    .ourContacts,
-    ourSocialNetworks {
+    .contactInformation {
+        margin-top: 15%;
+        align-items: center;
         text-align: center;
     }
     .ourSocialNetworks {
-        justify-content: center;
-        height: 5vh;
-        margin-bottom: 20%;
+        width: 30%;
     }
-    footer{
+    footer {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 425px) {
-    infoBoxes {
-        flex-direction: column;
+    header {
+        display: flex;
+        align-content: space-around;
+        height: auto;
     }
-    .navigation .infoBox {
+    section {
+        height: auto;
+    }
+    .info {
+        margin-top: 5%;
+        height: auto;
+    }
+    .infoBox {
         width: 45%;
+        margin: 0;
+    }
+    .navigation {
+        height: 12vh;
+        width: 100%;
+    }
+    .infoAboutBox {
+        height: auto;
     }
     .infoText,
     .buttonsMain,
@@ -104,14 +111,41 @@
     .infoBox {
         width: 100%;
     }
+    .criterionBox {
+        height: auto;
+        width: 100%;
+    }
+    .title h1 {
+        text-align: center;
+        padding-top:10%;
+    }
+    .criterion {
+        margin-top: 5%;
+    }
+    #dwnldPdfButton {
+        margin: 0 auto;
+        margin: 50px;
+    }
+    .buttonsMain a {
+        margin-top: 5%;
+    }
+    .ourSocialNetworks {
+        width: 50%;
+    }
+    .buttonsMain {
+        height: auto;
+    }
     .infoAboutBox {
-        height: 200px;
+        height: auto;
     }
     .infoBox p {
         font-size: 16px;
     }
     .infoBox img {
-        padding-top: 20px;
-        width: 50%;
+        width: 40%;
+    }
+    .infoBox:nth-child(3),
+    .infoBox:nth-child(4) {
+        margin-top: 0;
     }
 }
