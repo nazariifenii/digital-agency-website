@@ -17,7 +17,7 @@
         align-items: flex-end;
     }
     .info {
-        margin-top: 10%;
+        margin-top: 5%;
         height: auto;
     }
     .infoText p {
@@ -28,9 +28,16 @@
         margin-top: 5%;
     }
     .infoBox,
-    .infoBox,
+    .infoBox {
+        width: 45%;
+    }
+    .buttonsMain {
+        height: 13vh;
+        justify-content: space-between;
+    }
     .buttonsMain a {
         width: 45%;
+        margin: 0;
     }
     .infoBox:nth-child(3),
     .infoBox:nth-child(4) {
@@ -42,9 +49,6 @@
     .contactInformation,
     .criterion {
         width: 100%;
-    }
-    .buttonsMain {
-        height: 13vh;
     }
     .applicationForm {
         display: flex;
@@ -78,6 +82,62 @@
     }
     footer {
         text-align: center;
+    }
+    .topnav a{
+        transition: 0ms;
+    }
+    .topnav a {
+        font-size: 12pt;
+    }
+    .topnav a:first-child {
+        display: none;
+    }
+    .topnav .responsive a:first-child {
+        display: block;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: left;
+        display: block;
+        font-size: 15pt;
+    }
+    .topnav.responsive {
+        position: relative;
+        background-color: #fff;
+        display: block;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-size: 12pt;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        color: #757575;
+        padding: 14px 16px;
+        margin-right: 0;
+    }
+    .topnav.responsive a:nth-child(1) {
+        background-color: #b86ba3;
+        color: #fff;
+        padding: 14px 16px;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
     }
 }
 
@@ -116,15 +176,17 @@
         width: 100%;
     }
     .title h1 {
+        margin-top: 15%;
+    }
+    h1{
         text-align: center;
-        padding-top:10%;
     }
     .criterion {
         margin-top: 5%;
     }
     #dwnldPdfButton {
         margin: 0 auto;
-        margin: 50px;
+        margin-bottom: 50px;
     }
     .buttonsMain a {
         margin-top: 5%;
@@ -137,6 +199,9 @@
     }
     .infoAboutBox {
         height: auto;
+    }
+    .contactUs{
+        margin: 15% 0;
     }
     .infoBox p {
         font-size: 16px;

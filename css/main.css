@@ -32,19 +32,28 @@ section {
     align-content: space-around;
 }
 
-.m-menu-link {
-    display: none;
-    color: #fff;
-    font-size: 2rem;
-    text-decoration: none;
+.topnav{
+    margin-top: 50px;
 }
 
-.navigation {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 10vh;
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
     font-weight: bold;
+    transition: 0.5s ease-in-out all;
+    font-size: 10pt;
+    margin-right: 6%;
+}
+
+.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
 }
 
 .menu {
@@ -64,39 +73,11 @@ section {
     display: inline-block;
     position: relative;
     text-decoration: none;
+    transition: .5s ease-in-out;
 }
 
-.menu a::before {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #fff;
-    transition: width .5s ease-in-out, left .5s ease-in-out;
-    left: 50%;
-    bottom: -3px;
-}
-
-.menu a::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #fff;
-    transition: width .5s ease-in-out;
-    left: 50%;
-    bottom: -3px;
-}
-
-.menu a:hover::before {
-    width: 50%;
-    left: 0;
-}
-
-.menu a:hover::after {
-    width: 50%;
+.topnav a:hover {
+    color: #b86ba3;
 }
 
 .info {
@@ -106,7 +87,7 @@ section {
     align-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    height:  90vh;
+    height: 90vh;
 }
 
 .infoText {
@@ -126,10 +107,13 @@ section {
     height: 15vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.buttonsMain a {
+    margin-right: 20px;
 }
 
 .button {
@@ -144,14 +128,24 @@ section {
     width: 175px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
     border: none;
+    transition: .5s ease-in-out;
 }
 
 .emptyButton {
     border: 1px solid #b86ba3;
 }
 
+.emptyButton:hover {
+    box-shadow: none;
+    color: #b86ba3;
+}
+
 .gradientButton {
     background: linear-gradient(to right, #e38f73, #b86ba3);
+}
+
+.gradientButton:hover {
+    box-shadow: none;
 }
 
 .infoBoxes {
@@ -201,11 +195,6 @@ section {
     width: 73%;
 }
 
-#dwnldPdfButton{
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
 .title {
     display: flex;
     flex-direction: column;
@@ -239,6 +228,28 @@ section {
     position: relative;
 }
 
+.trendsPdf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.trendsPdf .group {
+    width: 175px;
+    margin: 15px 0;
+}
+
+.trendsPdf input {
+    background-color: #fbfbfb;
+}
+
+#dwnldPdfButton {
+    margin: 0 auto;
+}
+
 .listItem {
     display: flex;
     justify-content: flex-start;
@@ -255,7 +266,6 @@ section {
 }
 
 #thirdSection {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,6 +425,10 @@ input:focus~.highlight {
     }
 }
 
+#applicationButton {
+    cursor: pointer;
+}
+
 .contactInformation {
     display: flex;
     flex-direction: column;
@@ -510,7 +524,7 @@ footer p {
     background-color: #fbfbfb;
 }
 
-.textCenter{
+.textCenter {
     text-align: center;
     margin-top: 5%;
 }

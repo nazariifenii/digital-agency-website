@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Sandia | Digital agency</title>
+    <title>Digital agency | Sandia</title>
 </head>
 
 <body>
@@ -31,26 +31,21 @@
     <header>
         <div class="container">
 
-            <div class="navigation">
-                <a href="#" class="m-menu-link">&#9776;</a>
-                <div class="menu visible-lg">
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Sandia</a>
+                <a href="#news">Послуги</a>
+                <a href="#contact">Про нас</a>
+                <a href="#about">Замовити</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div> 
 
-                    <a href="index.html">Sandia</a>
-
-                    <a href="#">Послуги</a>
-
-                    <a href="#">Про нас</a>
-
-                    <a href="#">Замовити</a>
-                </div>
-            </div>
             <div class="info">
                 <div class="infoText">
                     <p>DIGITAL AGENCY</p>
                     <h2>Займаємося брендингом, упаковкою, створенням та просуванням сайтів, візуальної реклами</h2>
                     <div class="buttonsMain">
-                        <a href="#" class="button emptyButton">Детальніше</a>
-                        <a href="#" class="button gradientButton">Консультація</a>
+                        <a href="#aboutUs" class="button emptyButton">Детальніше</a>
+                        <a href="#leaveAnApplication" class="button gradientButton">Консультація</a>
                     </div>
                 </div>
                 <div class="infoBoxes">
@@ -87,7 +82,7 @@
         </div>
     </header>
 
-    <section id="secondSection">
+    <section id="secondSection" name="aboutUs">
         <div class="container">
             <div class="title">
                 <h1>Ми знаємо що потрібно вашому бізнесу</h1>
@@ -123,11 +118,20 @@
                     <p>Ми працюємо на результат, та впершу чергу думаємо про біль очікування клієнта. Ваш проект — наш проект</p>
                 </div>
             </div>
-            <a id="dwnldPdfButton" href="#" class="button gradientButton">Обговорити проект</a>
+            <div class="trendsPdf">
+                <h4>Ми підготували .pdf презентацію де зібрали усі тренди 2018 року в digital</h4>
+                <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Ваша пошта</label>
+                    </div>
+                <a id="dwnldPdfButton" href="#" class="button gradientButton">Отримати .pdf</a>
+            </div>
         </div>
     </section>
 
-    <section id="thirdSection">
+    <section id="thirdSection" name="leaveAnApplication">
         <div class="contactUs">
             <div class="applicationForm">
                 <h1>Залиште мейл і вже через хвилину ми почнемо роботу з вашим проектом</h1>
