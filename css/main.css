@@ -6,6 +6,34 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 0 0 75px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.0833vw;
+    line-height: 1.2;
+    font-weight: 700
+}
+
+p {
+    font-size: 12.5px;
+    font-weight: 600;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    padding: 50px 0;
+}
+
 *,
 *:before,
 *:after {
@@ -32,7 +60,7 @@ section {
     align-content: space-around;
 }
 
-.topnav{
+.topnav {
     margin-top: 50px;
 }
 
@@ -41,7 +69,6 @@ section {
     display: block;
     color: #fff;
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
     transition: 0.5s ease-in-out all;
     font-size: 10pt;
@@ -68,11 +95,9 @@ section {
 
 .menu a {
     color: #fff;
-    text-decoration: none;
     font-size: 10pt;
     display: inline-block;
     position: relative;
-    text-decoration: none;
     transition: .5s ease-in-out;
 }
 
@@ -132,7 +157,7 @@ section {
 }
 
 .emptyButton {
-    border: 1px solid #b86ba3;
+    border: 3px solid #b86ba3;
 }
 
 .emptyButton:hover {
@@ -150,17 +175,24 @@ section {
 
 .infoBoxes {
     text-align: center;
-    width: 330px;
+    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     height: auto;
-    padding-bottom: 30px;
 }
 
 .infoBox {
-    width: 150px;
+    width: 160px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 0 0 25px;
+}
+
+.infoBox:nth-child(1),
+.infoBox:nth-child(2) {
+    margin-bottom: 25px;
 }
 
 .infoBox a {
@@ -174,13 +206,7 @@ section {
 }
 
 .infoBox img {
-    padding-top: 10px;
-}
-
-.infoAboutBox {
-    background: #fff;
-    height: 125px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 0 15px;
 }
 
 #secondSection {
@@ -191,20 +217,14 @@ section {
     align-items: center;
 }
 
-#secondSection .container {
-    width: 73%;
-}
-
 .title {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 }
 
-.agencyCriterion h1 {
-    padding-top: 75px;
-    margin: 0 auto;
+#secondSection .title {
+    width: 60%;
 }
 
 .agencyCriterion a {
@@ -213,56 +233,68 @@ section {
 }
 
 .criterionBox {
-    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 7%;
+}
+
+.criterion:nth-child(1),
+.criterion:nth-child(3) {
+    margin-right: 125px;
 }
 
 .criterion {
-    width: 45%;
-    margin-top: 45px;
+    width: 315px;
+    margin-bottom: 80px;
     height: auto;
     position: relative;
 }
 
-.trendsPdf {
+#secondSection a {
+    font-weight: 600;
+    font-size: 12.5px;
+    margin-top: 20px;
+}
+
+#trendsPdf {
+    background-color: #000;
+    height: auto;
+}
+
+#trendsPdf .container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+#trendsPdf .group {
+    margin: 35px 0 20px;
+}
+
+#trendsPdf h1 {
+    width: 70%;
+    margin: 0;
+}
+
+#trendsPdf .getPdf {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 25px;
+    width: 180px;
+    margin-right: 60px;
 }
 
-.trendsPdf .group {
-    width: 175px;
-    margin: 15px 0;
-}
-
-.trendsPdf input {
-    background-color: #fbfbfb;
+#trendsPdf input {
+    background-color: #000;
 }
 
 #dwnldPdfButton {
-    margin: 0 auto;
+    width: 100%;
 }
 
-.listItem {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-}
-
-.listItem h5 {
-    margin: 5px;
-}
-
-.agencyCriterion a {
-    margin: 0 auto;
+#trendsPdf label,
+#trendsPdf h1 {
+    color: #fff;
 }
 
 #thirdSection {
@@ -444,12 +476,25 @@ input:focus~.highlight {
     justify-content: space-between;
 }
 
+.ourContacts {
+    margin-bottom: 25px;
+}
+
+.ourContacts>p {
+    margin-bottom: 20px;
+}
+
 .ourSocialNetworks a {
     height: 40px;
     width: 40px;
     border: 2px solid #b86ba3;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
     margin-top: 10%;
+    transition: 0.5s ease-in-out all;
+}
+
+.ourSocialNetworks a:hover {
+    box-shadow: 0 0 0 0;
 }
 
 .ourSocialNetworks img {
@@ -475,11 +520,10 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 10%;
 }
 
 .priceBox {
-    width: 27%;
+    width: 275px;
     height: 450px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
     display: flex;
@@ -508,6 +552,8 @@ footer p {
 
 .priceHeading p {
     font-size: 11.5px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .priceBox ul {
@@ -526,5 +572,83 @@ footer p {
 
 .textCenter {
     text-align: center;
-    margin-top: 5%;
+}
+
+/* WEB Page */
+
+#ourLastWorks .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mockUp {
+    width: 50%;
+}
+
+.mockUp img {
+    width: 100%;
+}
+
+.projectDescription {
+    padding: 50px 70px;
+    width: 50%;
+}
+
+.projectDescription a {
+    color: #b86ba3;
+    margin-top: 50px;
+}
+
+.customWebProjects .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.customProjectPrice {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.purpleText {
+    color: #b86ba3;
+}
+
+.customWebProjects .projectInfo {
+    width: 51%;
+}
+
+.customWebProjects {
+    background-color: #fbfbfb;
+}
+
+.customWebProjects .priceBox {
+    background-color: #fff;
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    /* for IE 6 */
+}
+
+.logo img {
+    top: 0;
+    left: 500px;
+}
+
+.logoText {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
 }

@@ -1,6 +1,17 @@
 @media screen and (max-width: 768px) {
     header {
-        height: 100vh;
+        height: auto;
+    }
+    section {
+        height: auto;
+        padding: 50px 0;
+    }
+    h1 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 30px;
+        padding-bottom: 40px;
     }
     .visible-lg {
         display: none;
@@ -27,9 +38,11 @@
         font-size: 21px;
         margin-top: 5%;
     }
-    .infoBox,
     .infoBox {
         width: 45%;
+    }
+        .infoBoxes {
+        justify-content: space-between;
     }
     .buttonsMain {
         height: 13vh;
@@ -43,19 +56,31 @@
     .infoBox:nth-child(4) {
         margin-top: 4%;
     }
+    
     .infoText,
     .infoBoxes,
     .applicationForm,
-    .contactInformation,
-    .criterion {
+    .contactInformation
+    {
         width: 100%;
+    }
+    .criterionBox {
+        display: flex;
+        justify-content: space-between;
+    }
+    .criterion:nth-child(1),
+    .criterion:nth-child(3) {
+        margin-right: 0;
+    }
+    .criterion {
+        width: 45%;
     }
     .applicationForm {
         display: flex;
         justify-content: center;
     }
-    .title h1 {
-        font-size: 20px;
+    #secondSection .title {
+        width: 100%;
     }
     #applicationButton {
         margin: 0 auto;
@@ -67,15 +92,33 @@
         margin: 0 auto;
         margin-top: 3%;
     }
+    .infoBox{
+        margin: 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
     .infoBox img {
         padding-top: 20px;
-        height: 65%;
-        margin: 0;
+        height: auto;
+        margin: 0 auto;
+        width: 40%;
     }
     .contactInformation {
         margin-top: 15%;
         align-items: center;
         text-align: center;
+    }
+    #trendsPdf .group {
+        margin: 15px 0;
+        width: 100%;
+    }
+    #trendsPdf .getPdf {
+        width: 25%;
+        margin: 0;
+    }
+    #trendsPdf h1 {
+        width: 70%;
+        padding: 0;
     }
     .ourSocialNetworks {
         width: 30%;
@@ -83,7 +126,7 @@
     footer {
         text-align: center;
     }
-    .topnav a{
+    .topnav a {
         transition: 0ms;
     }
     .topnav a {
@@ -139,16 +182,46 @@
         width: 100%;
         text-align: left;
     }
+    .priceBoxes {
+        flex-direction: column;
+    }
+    .priceBox {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .projectInfo h1 {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    h1 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .container {
+        height: auto;
+    }
     header {
         display: flex;
         align-content: space-around;
         height: auto;
+        padding: 50px 0;
     }
     section {
         height: auto;
+    }
+    #secondSection .title {
+        width: 100%;
+    }
+    .topnav {
+        margin: 0;
     }
     .info {
         margin-top: 5%;
@@ -162,31 +235,27 @@
         height: 12vh;
         width: 100%;
     }
-    .infoAboutBox {
-        height: auto;
-    }
     .infoText,
     .buttonsMain,
     .buttonsMain a,
-    .infoBox {
+    .infoBox,
+    .infoBoxes {
         width: 100%;
     }
     .criterionBox {
         height: auto;
         width: 100%;
     }
-    .title h1 {
-        margin-top: 15%;
-    }
-    h1{
+    .applicationForm h2 {
         text-align: center;
     }
     .criterion {
-        margin-top: 5%;
+        margin: 0 0 30px;
+        width: 100%;
     }
-    #dwnldPdfButton {
-        margin: 0 auto;
-        margin-bottom: 50px;
+    .criterion:nth-child(1),
+    .criterion:nth-child(3) {
+        margin-right: 0;
     }
     .buttonsMain a {
         margin-top: 5%;
@@ -196,21 +265,68 @@
     }
     .buttonsMain {
         height: auto;
+        padding-bottom: 30px;
     }
     .infoAboutBox {
         height: auto;
-    }
-    .contactUs{
-        margin: 15% 0;
     }
     .infoBox p {
         font-size: 16px;
     }
     .infoBox img {
         width: 40%;
+        margin: 0 auto;
     }
     .infoBox:nth-child(3),
     .infoBox:nth-child(4) {
         margin-top: 0;
+    }
+    .infoBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 25px;
+    }
+    .project,
+    .project img {
+        width: 100%;
+    }
+    #trendsPdf .group {
+        margin: 15px 0;
+        width: 100;
+    }
+    #trendsPdf .getPdf {
+        width: 100%;
+        margin: 0;
+    }
+    #trendsPdf h1 {
+        width: 100%;
+    }
+    .mockUp {
+        width: 100%;
+    }
+    .customWebProjects h1 {
+        padding: 0;
+        margin: 0 0 50px;
+    }
+    .customProjectPrice .projectInfo {
+        width: 100%;
+    }
+    .customProjectPrice p:last-child {
+        padding-bottom: 30px;
+    }
+    .projectDescription {
+        padding: 0;
+        width: 100%;
+    }
+    .projectDescription h2 {
+        font-size: 30px;
+    }
+    .priceBoxes {
+        margin: 0;
+    }
+    .priceBox {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
